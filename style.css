@@ -147,7 +147,7 @@ body {
     font-size: 10vh;
     font-family: poppins, serif;
     font-weight: 900;
-    background: radial-gradient(40vh circle at var(--head-mouse-x) var(--head-mouse-y), rgb(195, 255, 0), rgb(2, 63, 45));
+    background: radial-gradient(40vh circle at var(--head-mouse-x) var(--head-mouse-y), rgb(255, 103, 103), rgb(181, 9, 9));
     background-clip: text;
     color: transparent;
 }
@@ -198,7 +198,7 @@ body {
 
 .h1 {
     font-size: 5vh;
-    background: radial-gradient(40vh circle at var(--head-mouse-x) var(--head-mouse-y), rgb(0, 255, 170), rgb(147, 33, 33));
+    background: radial-gradient(40vh circle at var(--head-mouse-x) var(--head-mouse-y), rgb(255, 136, 136), rgb(255, 43, 43));
     background-clip: text;
     color: transparent;
 }
@@ -288,7 +288,7 @@ body {
     aspect-ratio: 1;
     display: grid;
     gap: 3vh;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 20%;
     grid-template-columns: 1fr 1fr;
     max-height: 60vh;
     max-width: 30vw;
@@ -307,7 +307,7 @@ body {
     height: 100%;
     content: "";
     position: absolute;
-    background: radial-gradient(40vh circle at var(--x) var(--y), #d3ff80, rgba(255, 119, 119, 0.4));
+    background: radial-gradient(40vh circle at var(--x) var(--y), #d3ff804b, rgba(255, 119, 119, 0.4));
     z-index: -1;
 }
 
@@ -354,6 +354,8 @@ body {
     position: absolute;
     bottom: 3vh;
     justify-self: center;
+    max-height: 2vh;
+
 }
 
 .btn:hover {
@@ -369,8 +371,19 @@ body {
     align-items: center;
     justify-content: center !important;
     display: flex;
+    padding: 10vh !important;
 }
-
+.splw{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.splw::-webkit-scrollbar{
+    display: none;
+}
+.spls{
+    padding: 0 !important;
+    max-height: 6px;
+}
 @media screen and (max-width:600px) {
     .card-ul {
         flex-direction: column;
