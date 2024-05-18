@@ -1,0 +1,1 @@
+This project recreates a responsive navigation bar with a menu and various navigation links, using HTML, CSS, and JavaScript. It also includes a hero section and a cards section showcasing different features.
