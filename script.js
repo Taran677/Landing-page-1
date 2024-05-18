@@ -60,9 +60,8 @@ if (window.innerWidth > 600) {
   console.log("lol");
 }
 
-let menu = document.querySelector(".spl");
+let menu = document.querySelector(".menu-cont");
 menu.onclick = () => {
-  let list = document.querySelector(".list");
-  list.style.display = "flex";
-  console.log("lol");
+  let list = document.querySelector(".listing");
+  list.classList.toggle("come")
 };
